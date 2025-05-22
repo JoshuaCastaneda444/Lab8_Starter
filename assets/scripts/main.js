@@ -85,23 +85,26 @@ async function getRecipes() {
   //            take two parameters - resolve, and reject. These are functions
   //            you can call to either resolve the Promise or Reject it.
   
-  return new Promise((resolve, reject) => {
+  return new Promise(async (resolve, reject) => {
     /**************************/
     // A4-A11 will all be *inside* the callback function we passed to the Promise
     // we're returning
     /**************************/
-    // A4. TODO - Loop through each recipe in the RECIPE_URLS array constant
+    // A4. DONE - Loop through each recipe in the RECIPE_URLS array constant
     //            declared above
     for (const URL of RECIPE_URLS) {
-      // A5. TODO - Since we are going to be dealing with asynchronous code, create
+      // A5. DONE - Since we are going to be dealing with asynchronous code, create
       //            a try / catch block. A6-A9 will be in the try portion, A10-A11
       //            will be in the catch portion.
 
       try {
-        // A6. TODO - For each URL in that array, fetch the URL - MDN also has a great
+        // A6. DONE - For each URL in that array, fetch the URL - MDN also has a great
         //            article on fetch(). NOTE: Fetches are ASYNCHRONOUS, meaning that
         //            you must either use "await fetch(...)" or "fetch.then(...)". This
         //            function is using the async keyword so we recommend "await"
+
+        const response = await fetch(URL);
+
         // A7. TODO - For each fetch response, retrieve the JSON from it using .json().
         //            NOTE: .json() is ALSO asynchronous, so you will need to use
         //            "await" again
