@@ -58,7 +58,7 @@ function initializeServiceWorker() {
           console.log("Service worker registration succeeded:", registration);
         },
         (error) => {
-          // B5. TODO - In the event that the service worker registration fails, console
+          // B5. DONE - In the event that the service worker registration fails, console
           //            log that it has failed.
           console.error(`Service worker registration failed: ${error}`);
         }
