@@ -75,7 +75,10 @@ async function getRecipes() {
   /**************************/
   // The rest of this method will be concerned with requesting the recipes
   // from the network
-  // A2. TODO - Create an empty array to hold the recipes that you will fetch
+  // A2. Done? - Create an empty array to hold the recipes that you will fetch
+
+  // Note: recipes will be empty already if we rach this point, so we all good;
+
   // A3. TODO - Return a new Promise. If you are unfamiliar with promises, MDN
   //            has a great article on them. A promise takes one parameter - A
   //            function (we call these callback functions). That function will
