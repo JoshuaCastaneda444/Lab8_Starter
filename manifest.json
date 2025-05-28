@@ -1,11 +1,11 @@
 {
-    "name": "",
-    "short_name": "",
-    "description": "",
-    "start_url": "",
-    "display": "",
-    "background_color": "",
-    "theme_color": "",
+    "name": "Lab8_Starter",
+    "short_name": "JoshuaCastaneda",
+    "description": "View six static recipe cards! :D",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#1d2021",
+    "theme_color": "#d0b9f0",
     "icons": [
       {
         "src": "/assets/images/icons/icon-192x192.png",
