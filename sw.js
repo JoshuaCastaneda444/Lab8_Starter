@@ -41,7 +41,6 @@ self.addEventListener('fetch', function (event) {
   /*******************************/
   // B7. DONE - Respond to the event by opening the cache using the name we gave
   //            above (CACHE_NAME)
-  event.
 
   event.respondWith(caches.open(CACHE_NAME).then((cache) => {
     // B8. Done - If the request is in the cache, return with the cached version.
